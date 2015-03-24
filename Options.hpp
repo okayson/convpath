@@ -62,7 +62,7 @@ public:
 		cout << "    $ make 2>&1 | convpath" << endl;
 		cout << "  ...and output to a file:" << endl;
 		cout << "    $ make 2>&1 | convpath > filename" << endl;
-		cout << "  ...output to standard output and filename:" << endl;
+		cout << "  ...output to standard output and a file:" << endl;
 		cout << "    $ make 2>&1 | convpath | tee filename" << endl;
 		cout << endl;
 		cout << "  Input from a file:" << endl;
