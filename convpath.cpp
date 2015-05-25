@@ -14,6 +14,8 @@ Measure measure;
 using namespace std;
 
 //------------------------------------------------------------------------------
+#define cSizeOfLineBuffer (1024*10)
+//------------------------------------------------------------------------------
 int main(int argc, char* argv[])
 {
 	Options opt;
@@ -35,7 +37,7 @@ int main(int argc, char* argv[])
 
 	while ( !cin.eof() )
 	{
-		char lineBuffer[1024];
+		char lineBuffer[cSizeOfLineBuffer];
 		cin.getline(lineBuffer, sizeof(lineBuffer));
 		cout << conv->convert(lineBuffer) << endl;
 	}
